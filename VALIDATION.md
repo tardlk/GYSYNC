@@ -21,6 +21,17 @@
 
 一次空闲容器采样：`79.5MiB / 1.914GiB 0.23%`，不包含 macOS 上 Docker 虚拟机本身的资源开销。
 
-尚未实测：大文件长时间上传、不同 NAS 文件系统/跨卷权限组合、Linux AMD64 运行、完整浏览器视觉验收。已提供 AMD64 GitHub Actions 配置，但尚未向远端推送或运行 CI。
+尚未实测：大文件长时间上传、不同 NAS 文件系统/跨卷权限组合、完整浏览器视觉验收。
 
 单元测试当前有一条 Starlette TestClient 对 httpx 的弃用提示，不影响上述测试通过；运行服务不使用 TestClient。
+
+## GitHub Actions 发布验收
+
+2026-11-17，源码已发布至 [tardlk/GYSYNC](https://github.com/tardlk/GYSYNC)，初始提交 `35e1ccb0861e59791be49b7f6f39e1145ddfb51c`。
+
+- [首次流水线](https://github.com/tardlk/GYSYNC/actions/runs/44051521307)：全部成功。Linux AMD64 上 49 项测试、Ruff、前端语法和两份 Compose 配置检查通过。
+- Linux AMD64、ARM64 分别在原生 runner 上构建；两个容器的 `/health`、前端静态文件、上游来源清单、GPL 许可证打包检查均通过。
+- 多平台镜像已公开发布为 `ghcr.io/tardlk/gysync:latest`，同时提供完整提交 ID 的 `sha-` 标签。未配置或上传用户账号凭据；CI 使用仓库自身的 `GITHUB_TOKEN` 发布。
+- 匿名访问 GHCR 成功；下载并校验 OCI index 的 SHA-256，确认包含 `linux/amd64` 和 `linux/arm64`。另有 provenance 证明清单，其平台显示为 `unknown/unknown`，不是第三种运行平台。
+- 此次镜像清单摘要：`sha256:35894282a0ac0c57751508764ecee17e31158e8d3caecf7ad74cf4ec9fa648c8`。`latest` 会随以后通过验证的 main 构建更新，需固定版本时使用提交标签或摘要。
+- 本地补做发布前镜像构建、全新配置容器健康检查和打包文件检查，均通过；生产实例及其配置卷继续正常运行。
