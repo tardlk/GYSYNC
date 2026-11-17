@@ -1,0 +1,253 @@
+{
+  "repository": "https://github.com/jxxghp/MoviePilot",
+  "commit": "7a030f5b21931b5e21ee5d84f03db6053f3b1694",
+  "license": "GPL-3.0",
+  "files": [
+    {
+      "source": "domain/context.py",
+      "original_sha256": "f77cc601574a1068db6b166c702f2ccf50304838119c6881eef0261aabb759cc"
+    },
+    {
+      "source": "domain/meta/customization.py",
+      "original_sha256": "1c5353067bedf35763e675e02f1052d3d81ee664bfdbe7882ec3b0b105390de0"
+    },
+    {
+      "source": "domain/meta/infopath.py",
+      "original_sha256": "395a4d4a37dded44a011751517b04dd4eeaaa209672aaa3ec73e120dd7e28933"
+    },
+    {
+      "source": "domain/meta/metaanime.py",
+      "original_sha256": "3553fed00c24f8ef62e254adf5d564ab96a0d18a10820e0dc0f29b6494725b30"
+    },
+    {
+      "source": "domain/meta/metabase.py",
+      "original_sha256": "41eb1360d2eae9911d1a2f254d4a0ef8cdc9a7c4a06103cfad30eacfa85c3c1c"
+    },
+    {
+      "source": "domain/meta/metamusic.py",
+      "original_sha256": "c47f9f4fdf39d66ca043bf73715ecf178b10685892978a6229fe87ef517f3464"
+    },
+    {
+      "source": "domain/meta/metavideo.py",
+      "original_sha256": "c95f1d3bfd9855b69ce2aa1af7c02bdcf56984836a7f89860e14e7560ce8072a"
+    },
+    {
+      "source": "domain/meta/releasegroup.py",
+      "original_sha256": "e1b1298b3efb1de0fd0acb1aa095cb1a09eaf3a857e7330eaf368fbeb4d8f490"
+    },
+    {
+      "source": "domain/meta/runtime.py",
+      "original_sha256": "3f94d37a1c899785fa3efd27b3518dfd3ece6130d9fdc2b8af5af19630d23c07"
+    },
+    {
+      "source": "domain/meta/streamingplatform.py",
+      "original_sha256": "05f0f88eedda34e29a47a96c153625c0da80bb3c79b358737abdf1249dcc62ff"
+    },
+    {
+      "source": "domain/meta/words.py",
+      "original_sha256": "80e789da119f5db9ab0238e662213a83c62094c8babd61515906d507e3dec82e"
+    },
+    {
+      "source": "domain/metainfo.py",
+      "original_sha256": "dc6ff42840078b74d369f5337711afc3cec7208d968d8201098c224aa93c24da"
+    },
+    {
+      "source": "domain/projection/anilist.py",
+      "original_sha256": "003fc1bff8dec84212a0f2861aec96f4fa6d24b9de40bcb8e7f38877eb21ce7d"
+    },
+    {
+      "source": "domain/projection/bangumi.py",
+      "original_sha256": "a3a905fd4f7393f2fd1eb373838447e7f33c43187f145def65546f9647e112e3"
+    },
+    {
+      "source": "domain/projection/douban.py",
+      "original_sha256": "e3dd5727ac630f5f9ddf44ef3aa6bd0d4ec0161f8df45a29414e7c114cc3462a"
+    },
+    {
+      "source": "domain/projection/mapping.py",
+      "original_sha256": "ed93311904694049f1d8dbd8c6e7f04438156e7e5f69e16306ce2e5aafa6be75"
+    },
+    {
+      "source": "domain/projection/tmdb.py",
+      "original_sha256": "44b8242410bfafb3e1927ae62f7d60caa1ae58a499828d107edbca8f21a99bbb"
+    },
+    {
+      "source": "domain/title.py",
+      "original_sha256": "718178cb5013a74f557b02d941c62aefa919bf777936872317082f322d9c0f32"
+    },
+    {
+      "source": "domain/tokens.py",
+      "original_sha256": "94346f2b3f089b9fd7b8e87ce26fcc6a043ccc33324f17a39090cce0a88ae185"
+    },
+    {
+      "source": "foundation/dom.py",
+      "original_sha256": "38b63b12ee03be90ae6fd9ecafc26636b615dde2c4f3ad5eb86ac55e06863ce6"
+    },
+    {
+      "source": "foundation/singleton.py",
+      "original_sha256": "28baffb3e0c560a89564bbe96cb010c1bdd373422fbcf1c541af7111ef924362"
+    },
+    {
+      "source": "foundation/size.py",
+      "original_sha256": "ee3289e2cbdd595823ff21615912aea6ce91f436c97c43628932871279167835"
+    },
+    {
+      "source": "foundation/temporal.py",
+      "original_sha256": "237d9f55de13b2247e55bca987a06e7285f0cda03d7d314c2a78bf66e32c24e3"
+    },
+    {
+      "source": "foundation/text.py",
+      "original_sha256": "8d8c5ed7aa81e36d4d20dc035a768bd176a41cc906ffa192eec928f820645487"
+    },
+    {
+      "source": "modules/themoviedb/scraper.py",
+      "original_sha256": "3eec176a39c4139ac0423b504447f6d9258fc527f1b1d1d43fde69f5ab4eda7e"
+    },
+    {
+      "source": "modules/themoviedb/tmdbapi.py",
+      "original_sha256": "d5d99c3a8a438b5a6fc04fb3971e6bb2fe0bd51bc414b7efda8b928e0c157093"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/__init__.py",
+      "original_sha256": "77f4d1ab46712d07d5b0d5b87114fa6cacdcfc0af33c29b16a4a9add93060117"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/as_obj.py",
+      "original_sha256": "4ecaf8f1a7d11d933195ecdabc6561ede5ecf5e86d4a6c137e61797c43c1c590"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/exceptions.py",
+      "original_sha256": "438a5ae566f7d82c3241b1098ddfe5330f6564d30761d62f96a9df88c66c712a"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/account.py",
+      "original_sha256": "389484e7c9b4b3f031192555b42fd236961eff095d4ed4cc08d5c13b68d61560"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/auth.py",
+      "original_sha256": "4b61f07fef45503d4dc8e5c2228f7293d83c74bbb8ef38cec2f5cd8c922f428e"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/certification.py",
+      "original_sha256": "6ac1294cd69879d4b7491d063e66c22e26f92a1cc3eed9059ac6e4c1bb5180be"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/change.py",
+      "original_sha256": "caea6b3ae064a39ad772a421677f7e263154f0d6089282eb8e63dac691ffc38f"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/collection.py",
+      "original_sha256": "eb93377ae73c060009d664c08cb0a5b8270e46582ec60aee9ab8e2f66efd9ade"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/company.py",
+      "original_sha256": "b767c85c87f244a209917ce4972056206ff8324393365a517eae5e7592ecc1b4"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/configuration.py",
+      "original_sha256": "a8465f03cd9a361e4551279df18e234271e3784f716d57775a08ac074377fb19"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/credit.py",
+      "original_sha256": "f52fd1cc15469c3fc709f544d5658d0f3f2b1f06109f35a218695f8617d12bb0"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/discover.py",
+      "original_sha256": "e67e790f8f196a461f1aa2514e52cd9360e51c670cd09d0cb2421b01f3c9f79f"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/episode.py",
+      "original_sha256": "0af2d3ae59c044394cb8d06e37b06dd3d925efe469de5ef319e32f050013b4ff"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/find.py",
+      "original_sha256": "b46ab7bee9d66c05d5237accc85fcbe36cdb84198f9a83fe4ef9f639194b2981"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/genre.py",
+      "original_sha256": "a8994bbb2568a3b63540032e13d882b50c97d4f6fc41134cffa9a0e361bae6a3"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/group.py",
+      "original_sha256": "b1a9d07d1bc48c3365bf5a098d0a87f8e7cf75d7e91f49e3600bd43a291e119d"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/keyword.py",
+      "original_sha256": "cfc302fca34829e80cc9b73518ab3e0c47c69907b2a009a6ffd20324434f715c"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/list.py",
+      "original_sha256": "9cc9ee2e30fa45cbfed26d1560a67ccd98768d83e474c6517244db51a751f124"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/movie.py",
+      "original_sha256": "5183491fbd0b6e78557c07927b5a0de0afe6ee51013aaa809b850277dcda8d70"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/network.py",
+      "original_sha256": "efff85a70cf0ba969cd6db2f953afb11d06402de0fe875a3435bc8078935a0ce"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/person.py",
+      "original_sha256": "e892b349fe3b58a11a6182d640212b4039ba7f2eb4446807c596f2c1a1481996"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/provider.py",
+      "original_sha256": "17957701734cc26ae46980e15f23d0b846ef5081a99d81c566b404397c4269ed"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/review.py",
+      "original_sha256": "7ebd1cacd4222f5d66d72067f234e3638876a85ad15d3cacfb4a3f7f4321beed"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/search.py",
+      "original_sha256": "e1a16662f3c4fd791148ddea286ce74d1d3174450f6cc570a6ae2d93ca30d3ff"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/season.py",
+      "original_sha256": "885a04a701b5b3b651e21565bf369c33d74cdc08be07df3d5a2bb262e3915e5b"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/trending.py",
+      "original_sha256": "fba9004eb0d352f2d1460b0c03dd07ef0193262ffbe0c10da80e7e384a58d1dd"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/objs/tv.py",
+      "original_sha256": "557325ab4d2042ad6e08792021623f3891a20e27535ba80927e3470c6e5cefa3"
+    },
+    {
+      "source": "modules/themoviedb/tmdbv3api/tmdb.py",
+      "original_sha256": "c10380954219361528d8903989fdefdb0a565d07e3e99022510c3fead7e2c754"
+    },
+    {
+      "source": "schemas/category.py",
+      "original_sha256": "fdb883aad316ee23802e07e4174711b72151362015c869892c2bd9eebd77552f"
+    },
+    {
+      "source": "schemas/common.py",
+      "original_sha256": "0f9445d5b527de65a7ddc10509e60ecb454963c224235346a564ba9a615b033e"
+    },
+    {
+      "source": "schemas/exception.py",
+      "original_sha256": "f1d02eaa94e5a510ee4f662d4d4cd0c347b84c5ac097f336308bf19f14e88908"
+    },
+    {
+      "source": "schemas/media.py",
+      "original_sha256": "d84baf39aee674a7bba8fa48f96c9d4d5352c624b55b6460cde7e49967fbf427"
+    },
+    {
+      "source": "schemas/tmdb.py",
+      "original_sha256": "11dd5001b06135e9835dd08538d5b112f0a4d6472a97dca681b28f4a8f1dcaab"
+    },
+    {
+      "source": "schemas/types.py",
+      "original_sha256": "7e890ad837f855cfebed048ad16c66861e2504f3a3c047a467ac284316ce8ed0"
+    }
+  ],
+  "extractions": [
+    {
+      "source": "app/application/messaging/message.py",
+      "symbol": "TemplateContextBuilder"
+    }
+  ]
+}

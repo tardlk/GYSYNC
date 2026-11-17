@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+ORGANIZER_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec "$ORGANIZER_ROOT/.venv/bin/python" "$ORGANIZER_ROOT/scripts/manage.py" "$@"

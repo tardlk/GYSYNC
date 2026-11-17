@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+.env
+.env.*
+!.env.example
+data/
+*.db*
+*.log
+config.json
+admin-password.txt
+*.egg-info/
+build/
+dist/

@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+GUANGYA_PROJECT_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$GUANGYA_PROJECT_ROOT"
+if ! command -v docker >/dev/null 2>&1; then
+  GUANGYA_DOCKER_TOOLS="$HOME/.local/share/guangya-docker-tools"
+  if [ ! -x "$GUANGYA_DOCKER_TOOLS/bin/docker" ]; then
+    echo '请先安装 Docker Engine / Docker Desktop 和 Compose。' >&2
+    exit 1
+  fi
+  PATH="$GUANGYA_DOCKER_TOOLS/bin:$PATH"
+  DOCKER_CONFIG="$GUANGYA_DOCKER_TOOLS/docker-config"
+  DOCKER_HOST="unix://$HOME/.colima/guangya-organizer/docker.sock"
+  export PATH DOCKER_CONFIG DOCKER_HOST
+  case "${1:-ps}" in
+    up|start|build)
+      colima --profile guangya-organizer status >/dev/null 2>&1 || colima start guangya-organizer --cpu 2 --memory 2 --disk 20 --vm-type vz --runtime docker --mount-type virtiofs
+      ;;
+  esac
+fi
+if [ "$#" -eq 0 ]; then set -- ps; fi
+exec docker compose "$@"

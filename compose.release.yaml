@@ -1,0 +1,21 @@
+services:
+  organizer:
+    image: ghcr.io/tardlk/gysync:${IMAGE_TAG:-latest}
+    container_name: guangya-organizer
+    user: "${PUID:-1000}:${PGID:-1000}"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "${BIND_HOST:-127.0.0.1}:${PORT:-8796}:8796"
+    environment:
+      TZ: Asia/Shanghai
+      DATA_DIR: /config
+    volumes:
+      - ${CONFIG_DIR:-./data/config}:/config
+      - ${DOWNLOADS_DIR:-./data/downloads}:/downloads
+      - ${MEDIA_DIR:-./data/media}:/media
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 45s

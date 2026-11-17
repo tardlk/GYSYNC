@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/tardlk/MoviePilot-Plugins",
+  "license": "GPL-3.0",
+  "basis": "local 1.5.0 implementation; SDK imports and queue ownership adapted",
+  "files": [
+    {
+      "source": "plugins.v3/guangyasync/guangya_client.py",
+      "original_sha256": "c34d9f22d9b25870852c006d79f2f1d63ab1576c25e58c0b6f2d09fdfaf1c74a",
+      "target": "guangya/cloud_client.py"
+    },
+    {
+      "source": "plugins.v3/guangyasync/guangya_api.py",
+      "original_sha256": "c07ae5ca3e0530d82df8cf177edc745a629845ec4129604d02f225adfac566c0",
+      "target": "guangya/cloud_api.py"
+    },
+    {
+      "source": "plugins.v3/guangyasync/share_tasks.py",
+      "original_sha256": "c305250387b420b44b377b8515340d7c7709c0bec1fc9c76da512591ed9b91d4",
+      "target": "guangya/share_protocol.py"
+    }
+  ]
+}
